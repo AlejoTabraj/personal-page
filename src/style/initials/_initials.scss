@@ -1,0 +1,13 @@
+
+$fon-size: 1rem;
+$font-basquiat: 'Basquiat Regular';
+@font-face {
+    font-family: 'Basquiat Regular';
+    src: url('../../fonts/Basquiat-Regular.otf') format('opentype');
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
