@@ -1,14 +1,22 @@
 import React, { useState, useEffect } from 'react';
 
-export default function Transition() {
+export default function Transition({setDisplay}) {
   const [animate, setAnimate] = useState(false);
 
   useEffect(() => {
     const timer = setTimeout(() => {
       setAnimate(true);
-    }, 200);
+      
+    }, 20);
+    const timerContent = setTimeout(() => {
+      setDisplay(true);
+      console.log('hola')
+      
+    }, 520);
 
-    return () => clearTimeout(timer);
+    return () => {
+      clearTimeout(timer);
+      clearTimeout(timerContent);}
   }, []);
 
   return (

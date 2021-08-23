@@ -1,6 +1,8 @@
 
 $fon-size: 1rem;
 $font-basquiat: 'Basquiat Regular';
+$color-rosa: rgba(224, 109, 109, 0.9);
+
 @font-face {
     font-family: 'Basquiat Regular';
     src: url('../../fonts/Basquiat-Regular.otf') format('opentype');
@@ -10,4 +12,21 @@ $font-basquiat: 'Basquiat Regular';
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+}
+ul{
+    margin: 1rem 0;
+}
+ul li{
+    list-style: none;
+    font-family: 'Cormorant Garamond';
+}
+a:hover{
+    cursor: pointer;
+}
+body{
+    position: relative;
+}
+
+p{
+    font-family: 'Cormorant Garamond';
 }

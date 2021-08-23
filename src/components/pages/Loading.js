@@ -8,7 +8,7 @@ export default function Loading({ setShowContent }) {
     const count = setInterval(() => {
       loading < 100
         ? setLoading(loading + 1)
-        : (setLoading(100));
+        : ( setShowContent(true));
     }, 10);
 
     return () => clearInterval(count);

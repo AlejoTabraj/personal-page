@@ -1,11 +1,8 @@
 import React, { useState, useEffect } from 'react';
-import Navbar from '../organisms/Navbar';
 import Yo from './Yo';
-import { BrowserRouter as Router, Switch, Route, Link } from 'react-router-dom';
 
-export default function Main() {
-  const [transition, setTransition] = useState(false);
-  const count = 20
+export default function Main({transition,setTransition}) {
+
 
   useEffect(() => {
     const div = document.querySelector('#main')
@@ -33,19 +30,12 @@ for(var i = 0; i < count; i++){
 
     const timer = setTimeout(() => {
       setTransition(true);
-    }, 10);
+    },10);
     return () =>{ clearTimeout(timer); }
   }, []);
   return (
     <main id='main' className={`${transition ? 'main-left' : ''}`}>
-      <Router>
-        <Navbar transition={transition} />
-        <Switch>
-          <Route extact path={'/'}>
-            <Yo />
-          </Route>
-        </Switch>
-      </Router>
+            <Yo />      
     </main>
   );
 }

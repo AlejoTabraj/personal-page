@@ -4,15 +4,13 @@ import Main from './components/pages/Main'
 import '@fontsource/cormorant-garamond';
 import "@fontsource/libre-barcode-39-extended-text"; 
 import './style/main.scss';
+import Index from './components/Index';
 
 export default function App() {
   const [display, setDisplay] = useState(false);
 
   useEffect(() => {
-    const timer = setTimeout(() => {
-      setDisplay(true);
-    }, 2200);
   });
 
-  return <div className={'app'}>{display ? <Main /> : <Inicio />}</div>;
+  return <div className={'app'}>{display ? <Index /> : <Inicio setDisplay={setDisplay}/>}</div>;
 }

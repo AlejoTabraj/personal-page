@@ -2,13 +2,13 @@ import React, { useState } from 'react';
 import Loading from './Loading';
 import Transition from '../organisms/Transition';
 
-export default function Inicio() {
+export default function Inicio({setDisplay}) {
   const [showContent, setShowContent] = useState(false);
   return (
     <div>
       {showContent ? (
         <>
-          <Transition />
+          <Transition setDisplay={setDisplay}/>
         </>
       ) : (
         <Loading setShowContent={setShowContent} />
