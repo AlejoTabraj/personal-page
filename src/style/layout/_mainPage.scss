@@ -23,8 +23,12 @@
     
   }
   .link-rotate {
-    transform: rotate(70deg);
+    transform: rotate(90deg);
     opacity: 1;
+
+    @media (min-width: 500px){
+      transform: rotate(70deg);
+    }
   }
   
   section.yo {
@@ -49,7 +53,8 @@
   .yo h1:first-letter {
     margin-left: 0.2rem;
   }
-  .yo h2 {
+  .yo-name {
+    color: #ffffff;
     position: absolute;
     font-size: 2.5rem;
     font-family: 'Libre Barcode 39 Extended Text', cursive;
@@ -57,6 +62,7 @@
     right: 5%;
     letter-spacing: 0.0rem;
     bottom: 3%;
+    z-index: 999;
   }
   @media (min-width: 1000px) {
     section.yo {

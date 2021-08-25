@@ -1,4 +1,5 @@
 import React, {useEffect} from 'react'
+import Navbar from '../organisms/Navbar'
 import image1 from '../../assets/algv1.png'
 
 export default function Projects(){
@@ -26,10 +27,11 @@ export default function Projects(){
     }
       
     }, 900)
-    
+    const nav = document.querySelector('#nav')
+    nav.classList.toggle = 'outnav'
         return () =>{ clearTimeout(timer); }        
     }, [])
-    console.log('hola de proje')
+    
     return (
         <article id='project' className='article-project '>
         <h2 className='project-title glitch'>Visualizador de algoritmos</h2>

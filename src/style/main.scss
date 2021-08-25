@@ -2,12 +2,14 @@
 @import './layout/navbar';
 @import './layout/mainPage';
 @import './layout/project';
-@import './layout/glitch';
+@import './layout/contact';
 
  a {
     text-decoration: none;
   }
-
+  .outnav {
+    color:red;
+  }
   body {
     background: rgba(0, 0, 0, 0.1);
   }

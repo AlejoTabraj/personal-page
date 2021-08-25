@@ -2,7 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 export default function Navbar({ transition }) {
   return (
-    <nav>
+    <nav id='nav' >
       <ul>
         <li className={`${transition ? 'link-rotate' : ''}`}>
           <Link to={'/'}>Yo</Link>
@@ -11,7 +11,7 @@ export default function Navbar({ transition }) {
           <Link to={'/projects'}>Projectos</Link>
         </li>
         <li className={`${transition ? 'link-rotate' : ''}`}>
-          <Link to={'/jo'}>Contacto</Link>
+          <Link to={'/contact'}>Contacto</Link>
         </li>
       </ul>
     </nav>

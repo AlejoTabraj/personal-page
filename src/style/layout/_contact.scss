@@ -1,0 +1,38 @@
+.contact {
+    color: #FFFFFF;
+    font-family: $font-basquiat;
+    background: linear-gradient(rgba(0, 0, 0, 0.89), rgba(0, 0, 0, 0.89)),
+      url('../../assets/bg-img.jpg') center ;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    text-align: space-around;
+    padding-left: 22.5%;
+    text-align: center;
+    label{
+        flex-basis: 100%;        
+        font-size: 2.5rem;
+        padding-top: 3rem;
+        input{
+            border: none;
+            background-color: rgba($color: #000000, $alpha: .9);
+            outline: rgba($color: #000000, $alpha: 0.9);
+            font-size: 2rem;
+            width: 12rem;
+            padding-left: 1rem;
+        }
+    }
+    button{
+        font-family: $font-basquiat;
+        font-size: large;
+        height: 25px;
+        padding: 0 2rem;
+        border: none;
+        color: #FFFFFF;
+        cursor: pointer;
+        background-color: rgba($color: #000000, $alpha: .9);
+    }
+    
+}

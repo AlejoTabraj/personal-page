@@ -10,12 +10,13 @@
     color: #fff;
     padding: 0 5%;
     justify-content: center;
+    perspective: 1000px;
+
     .project-title{
         position: absolute;
         font-family: $font-basquiat;
-        transform: rotate(-15deg);
         font-size: 195%;
-        left: 10%;
+        left: 20.5%;
         top: 10%;
         z-index: 1;
         @media (min-width: 700px) {
@@ -32,8 +33,10 @@
             position: absolute;
             top: 35%;
             border-radius: 15px;
-            right: 12.5%;
+            right: 8.5%;
             z-index: -19;
+            transform: rotateX(-95deg);
+            transform: rotateY(-25deg);
         }
         h2{
             font-size: $fon-size;
@@ -43,7 +46,7 @@
 
         .description {
             position: absolute;
-            left: 12.5%;
+            left: 22.5%;
             max-width: 350px;
             width: 75%;
             bottom: 6%;

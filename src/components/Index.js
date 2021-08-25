@@ -3,6 +3,8 @@ import Main from './pages/Main'
 import { BrowserRouter as Router, Switch, Route} from 'react-router-dom';
 import Navbar from './organisms/Navbar';
 import Projects from './pages/Projects';
+import Contact from './pages/Contact';
+import Name from './atoms/Name';
 
 export default function Index(){
     const [transition, setTransition] = useState(false);
@@ -18,7 +20,11 @@ export default function Index(){
             <Route exact path='/projects'>
                 <Projects />
             </Route>
-    
+            
+            <Route exact path='/contact'>
+                <Contact />
+            </Route>
     </Switch>
+        <Name />
     </Router>)
 }
