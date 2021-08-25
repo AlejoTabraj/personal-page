@@ -49,8 +49,8 @@ export default function Projects(){
             </ul>
             <p>El objetivo era representar algunos de los principales algoritmos de ordenamiento de forma visual</p>
             <ul>
-               <li> <a>Github</a></li>
-               <li><a>En production</a></li>
+               <li> <a href='https://github.com/alejho4/algo-visualizador'>Github</a></li>
+               <li><a href='http://visual-algos-page.s3-website-sa-east-1.amazonaws.com/'>En production</a></li>
             </ul>
         </section>
         </article>
